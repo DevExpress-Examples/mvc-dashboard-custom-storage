@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[DataBaseEditaleDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.cs) (VB: [DataBaseEditaleDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.vb))**
+* [Global.asax.cs](./CS/MVCDashboardDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
+<!-- default file list end -->
 # MVC Dashboard - How to save dashboards to a database
 
 
