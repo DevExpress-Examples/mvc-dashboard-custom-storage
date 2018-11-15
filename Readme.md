@@ -1,3 +1,24 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DashboardDesigner.cs](./CS/MVCDashboardDesigner/App_Start/DashboardDesigner.cs) (VB: [DashboardDesigner.vb](./VB/MVCDashboardDesigner/App_Start/DashboardDesigner.vb))
+* [FilterConfig.cs](./CS/MVCDashboardDesigner/App_Start/FilterConfig.cs) (VB: [FilterConfig.vb](./VB/MVCDashboardDesigner/App_Start/FilterConfig.vb))
+* [RouteConfig.cs](./CS/MVCDashboardDesigner/App_Start/RouteConfig.cs) (VB: [RouteConfig.vb](./VB/MVCDashboardDesigner/App_Start/RouteConfig.vb))
+* [WebApiConfig.cs](./CS/MVCDashboardDesigner/App_Start/WebApiConfig.cs) (VB: [WebApiConfig.vb](./VB/MVCDashboardDesigner/App_Start/WebApiConfig.vb))
+* [HomeController.cs](./CS/MVCDashboardDesigner/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/MVCDashboardDesigner/Controllers/HomeController.vb))
+* [DataBaseEditaleDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.cs) (VB: [DataBaseEditaleDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.vb))
+* [Global.asax](./CS/MVCDashboardDesigner/Global.asax) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
+* [Global.asax.cs](./CS/MVCDashboardDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
+* [AjaxLogin.js](./CS/MVCDashboardDesigner/Scripts/AjaxLogin.js) (VB: [AjaxLogin.js](./VB/MVCDashboardDesigner/Scripts/AjaxLogin.js))
+* [cldr.event.js](./CS/MVCDashboardDesigner/Scripts/cldr.event.js) (VB: [cldr.event.js](./VB/MVCDashboardDesigner/Scripts/cldr.event.js))
+* [cldr.js](./CS/MVCDashboardDesigner/Scripts/cldr.js) (VB: [cldr.js](./VB/MVCDashboardDesigner/Scripts/cldr.js))
+* [cldr.supplemental.js](./CS/MVCDashboardDesigner/Scripts/cldr.supplemental.js) (VB: [cldr.supplemental.js](./VB/MVCDashboardDesigner/Scripts/cldr.supplemental.js))
+* [cldr.unresolved.js](./CS/MVCDashboardDesigner/Scripts/cldr.unresolved.js) (VB: [cldr.unresolved.js](./VB/MVCDashboardDesigner/Scripts/cldr.unresolved.js))
+* [globalize.currency.js](./CS/MVCDashboardDesigner/Scripts/globalize.currency.js) (VB: [globalize.currency.js](./VB/MVCDashboardDesigner/Scripts/globalize.currency.js))
+* [globalize.date.js](./CS/MVCDashboardDesigner/Scripts/globalize.date.js) (VB: [globalize.date.js](./VB/MVCDashboardDesigner/Scripts/globalize.date.js))
+* [globalize.message.js](./CS/MVCDashboardDesigner/Scripts/globalize.message.js) (VB: [globalize.message.js](./VB/MVCDashboardDesigner/Scripts/globalize.message.js))
+* [globalize.number.js](./CS/MVCDashboardDesigner/Scripts/globalize.number.js) (VB: [globalize.number.js](./VB/MVCDashboardDesigner/Scripts/globalize.number.js))
+<!-- default file list end -->
 # MVC Dashboard - How to save dashboards to a database
 
 
