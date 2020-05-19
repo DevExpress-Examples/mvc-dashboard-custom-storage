@@ -1,0 +1,8 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.DevExpress().Dashboard(settings => {
+    settings.Name = "Dashboard";
+    settings.Height = Unit.Percentage(100);
+}).GetHtml()
