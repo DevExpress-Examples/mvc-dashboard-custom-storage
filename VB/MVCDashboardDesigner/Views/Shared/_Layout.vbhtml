@@ -12,9 +12,9 @@
                 New StyleSheet With {.ExtensionSuite = ExtensionSuite.Dashboard}
                 )
     @Html.DevExpress().GetScripts(
-                        New Script With {.ExtensionSuite = ExtensionSuite.NavigationAndLayout},
-                        New Script With {.ExtensionSuite = ExtensionSuite.Editors},
-                        New Script With {.ExtensionSuite = ExtensionSuite.Dashboard}
+                New Script With {.ExtensionSuite = ExtensionSuite.NavigationAndLayout},
+                New Script With {.ExtensionSuite = ExtensionSuite.Editors},
+                New Script With {.ExtensionSuite = ExtensionSuite.Dashboard}
                 )
 
     <style type="text/css">

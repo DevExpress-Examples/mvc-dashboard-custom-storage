@@ -1,12 +1,10 @@
-using DevExpress.DashboardCommon;
-using DevExpress.DashboardWeb;
-using DevExpress.DataAccess.ConnectionParameters;
-using DevExpress.DataAccess.Sql;
 using System;
-using System.Web.Hosting;
+using System.Configuration;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using DevExpress.DashboardCommon;
+using DevExpress.DashboardWeb;
 
 namespace MVCDashboardDesigner {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -24,32 +22,19 @@ namespace MVCDashboardDesigner {
 
             DevExpress.Web.ASPxWebControl.CallbackError += Application_Error;
 
-            DataBaseEditaleDashboardStorage dataBaseDashboardStorage = new DataBaseEditaleDashboardStorage(MVCDashboardDesigner.Properties.Settings.Default.DashboardStorageConnection);
+            var dataBaseDashboardStorage = new DataBaseEditaleDashboardStorage(
+                ConfigurationManager.ConnectionStrings["DashboardStorageConnection"].ConnectionString);
 
             DashboardConfigurator.Default.SetDashboardStorage(dataBaseDashboardStorage);
 
-            DashboardSqlDataSource sqlDataSource = new DashboardSqlDataSource("SQL Data Source");
-            SelectQuery customerReportsQuery = SelectQueryFluentBuilder
-                .AddTable("CustomerReports")
-                .SelectColumn("CompanyName")
-                .SelectColumn("ProductName")
-                .SelectColumn("OrderDate")
-                .SelectColumn("ProductAmount")
-                .Build("CustomerReportsQuery");
-            sqlDataSource.Queries.Add(customerReportsQuery);
-
             DataSourceInMemoryStorage dataSourceStorage = new DataSourceInMemoryStorage();
-            dataSourceStorage.RegisterDataSource("sqlDataSource1", sqlDataSource.SaveToXml());
-            DashboardConfigurator.Default.SetDataSourceStorage(dataSourceStorage);
-            DashboardConfigurator.Default.ConfigureDataConnection += DataApi_ConfigureDataConnection;
-        }
+            DashboardObjectDataSource objDataSource = new DashboardObjectDataSource("Object Data Source", typeof(SalesPersonData));
 
-        void DataApi_ConfigureDataConnection(object sender, ConfigureDataConnectionWebEventArgs e) {
-            if (e.DataSourceName == "SQL Data Source") {
-                Access97ConnectionParameters accessParams = new Access97ConnectionParameters();
-                accessParams.FileName = HostingEnvironment.MapPath("~/App_Data/nwind.mdb");
-                e.ConnectionParameters = accessParams;
-            }
+            objDataSource.DataMember = "GetSalesData";
+
+            dataSourceStorage.RegisterDataSource("objectDataSource", objDataSource.SaveToXml());
+
+            DashboardConfigurator.Default.SetDataSourceStorage(dataSourceStorage);
         }
 
         protected void Application_Error(object sender, EventArgs e) {

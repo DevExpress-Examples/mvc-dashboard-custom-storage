@@ -4,8 +4,6 @@ Imports System.Collections.Generic
 Imports System.Data
 Imports System.Data.SqlClient
 Imports System.IO
-Imports System.Linq
-Imports System.Text
 Imports System.Xml.Linq
 
 Namespace MVCDashboardDesigner
@@ -15,11 +13,10 @@ Namespace MVCDashboardDesigner
 		Private connectionString As String
 
 		Public Sub New(ByVal connectionString As String)
-			MyBase.New()
 			Me.connectionString = connectionString
 		End Sub
 
-		Private Function IEditableDashboardStorage_AddDashboard(ByVal document As XDocument, ByVal dashboardName As String) As String Implements IEditableDashboardStorage.AddDashboard
+		Public Function AddDashboard(ByVal document As XDocument, ByVal dashboardName As String) As String Implements IEditableDashboardStorage.AddDashboard
 			Using connection As New SqlConnection(connectionString)
 				connection.Open()
 				Dim stream As New MemoryStream()
@@ -36,8 +33,7 @@ Namespace MVCDashboardDesigner
 			End Using
 		End Function
 
-
-		Private Function IDashboardStorage_LoadDashboard(ByVal dashboardID As String) As XDocument Implements IDashboardStorage.LoadDashboard
+		Public Function LoadDashboard(ByVal dashboardID As String) As XDocument Implements DevExpress.DashboardWeb.IDashboardStorage.LoadDashboard
 			Using connection As New SqlConnection(connectionString)
 				connection.Open()
 				Dim GetCommand As New SqlCommand("SELECT  Dashboard FROM Dashboards WHERE ID=@ID")
@@ -52,8 +48,7 @@ Namespace MVCDashboardDesigner
 			End Using
 		End Function
 
-		Private Function IDashboardStorage_GetAvailableDashboardsInfo() As IEnumerable(Of DashboardInfo) Implements IDashboardStorage.GetAvailableDashboardsInfo
-
+		Public Function GetAvailableDashboardsInfo() As IEnumerable(Of DashboardInfo) Implements DevExpress.DashboardWeb.IDashboardStorage.GetAvailableDashboardsInfo
 			Dim list As New List(Of DashboardInfo)()
 			Using connection As New SqlConnection(connectionString)
 				connection.Open()
@@ -70,7 +65,7 @@ Namespace MVCDashboardDesigner
 			Return list
 		End Function
 
-		Private Sub IDashboardStorage_SaveDashboard(ByVal dashboardID As String, ByVal document As XDocument) Implements IDashboardStorage.SaveDashboard
+		Public Sub SaveDashboard(ByVal dashboardID As String, ByVal document As XDocument) Implements DevExpress.DashboardWeb.IDashboardStorage.SaveDashboard
 			Using connection As New SqlConnection(connectionString)
 				connection.Open()
 				Dim stream As New MemoryStream()
@@ -85,8 +80,6 @@ Namespace MVCDashboardDesigner
 
 				connection.Close()
 			End Using
-
 		End Sub
-
 	End Class
 End Namespace

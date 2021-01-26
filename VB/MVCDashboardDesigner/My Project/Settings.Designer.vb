@@ -22,12 +22,5 @@ Namespace My
 				Return defaultInstance
 			End Get
 		End Property
-
-		<Global.System.Configuration.ApplicationScopedSettingAttribute(), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString), Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Dashboards;Integrated Security=True")>
-		Public ReadOnly Property DashboardStorageConnection() As String
-			Get
-				Return (DirectCast(Me("DashboardStorageConnection"), String))
-			End Get
-		End Property
 	End Class
 End Namespace

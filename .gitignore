@@ -20,6 +20,7 @@
 x64/
 x86/
 bld/
+[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -60,6 +61,7 @@ artifacts/
 *.pdb
 *.pgc
 *.pgd
+*.rsp
 *.sbr
 *.tlb
 *.tli
@@ -83,7 +85,7 @@ ipch/
 *.ncb
 *.opendb
 *.opensdf
-#*.sdf
+*.sdf
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
@@ -223,9 +225,9 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
-#*.mdf
-#*.ldf
-#*.ndf
+*.mdf
+*.ldf
+*.ndf
 
 # Business Intelligence projects
 *.rdl.data
@@ -295,3 +297,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+#ExampleRangeTester artifacts
+TesterMetadata.xml
+
+# Backup files
+*.bak
