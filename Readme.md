@@ -14,7 +14,8 @@ This example shows how to create a custom dashboard storage that allows storing 
 * [IDashboardStorage Interface](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage)
 * [Manage Multi-Tenancy](https://docs.devexpress.com/Dashboard/402924/web-dashboard/dashboard-backend/manage-multi-tenancy)
 
-## See also: 
-- <a href="https://www.devexpress.com/Support/Center/p/T392813">How to save dashboards created in ASPxDashboard to a DataSet</a>
-- <a href="https://www.devexpress.com/Support/Center/p/T386418">ASPxDashboard - How to load and save dashboards from/to a database</a>
-- <a href="https://www.devexpress.com/Support/Center/p/T954359">MVC Dashboard - How to implement multi-tenant Dashboard architecture</a>
+## More Examples
+  
+- <a href="https://www.devexpress.com/Support/Center/p/T392813">Dashboard for Web Forms - How to save dashboards created in ASPxDashboard to a DataSet</a>
+- <a href="https://www.devexpress.com/Support/Center/p/T386418">Dashboard for Web Forms - How to load and save dashboards from/to a database</a>
+- <a href="https://www.devexpress.com/Support/Center/p/T954359">Dashboard for MVC - How to implement multi-tenant Dashboard architecture</a>
