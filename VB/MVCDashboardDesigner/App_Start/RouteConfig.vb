@@ -11,7 +11,6 @@ Namespace MVCDashboardDesigner
 		Public Shared Sub RegisterRoutes(ByVal routes As RouteCollection)
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}")
 			routes.IgnoreRoute("{resource}.ashx/{*pathInfo}")
-			routes.MapDashboardRoute("api/dashboard")
 
 			routes.MapRoute(name:= "Default", url:= "{controller}/{action}/{id}", defaults:= New With {Key .controller = "Home", Key .action = "Index", Key .id = UrlParameter.Optional}) ' Parameter defaults -  URL with parameters -  Route name
 		End Sub

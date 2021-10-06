@@ -4,5 +4,6 @@
 
 @Html.DevExpress().Dashboard(settings => {
     settings.Name = "Dashboard";
+    settings.ControllerName = "DefaultDashboard";
     settings.Height = Unit.Percentage(100);
 }).GetHtml()

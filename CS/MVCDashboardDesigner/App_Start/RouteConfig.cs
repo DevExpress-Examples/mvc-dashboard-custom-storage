@@ -11,7 +11,6 @@ namespace MVCDashboardDesigner {
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("{resource}.ashx/{*pathInfo}");
-            routes.MapDashboardRoute("api/dashboard");
 
             routes.MapRoute(
                 name: "Default", // Route name
