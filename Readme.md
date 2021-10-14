@@ -28,7 +28,7 @@ IDashboardStorage provides functionality to open and edit dashboards available i
 IEditableDashboardStorage inherits the IDashboardStorage interface and contains one additional method that allows adding new dashboards to the storage.
 **string AddDashboard(XDocument dashboard, string dashboardName)** - takes a dashboard definition with its caption, saves it to the data storage, and returns the ID of a new saved dashboard.
   
-Additionally, this example contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)), which can be used to recreate a database used in this example on your side. Do no forget to update the connection string in the <strong>Web.config</strong> file to make it valid in your environment.
+Additionally, this example contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)), which can be used to recreate a database used in this example on your side. Do no forget to update the connection string in the **Web.config** file to make it valid in your environment.
 
 ## Documentation
   
