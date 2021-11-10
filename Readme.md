@@ -6,7 +6,7 @@
 
 # Dashboard for MVC - How to Load and Save Dashboards from/to a Database
 
-This example shows how to create a custom dashboard storage that allows storing dashboards in a database. 
+This example shows how to create a custom dashboard storage that allows you to store dashboards in a database. 
 
 <!-- default file list -->
 ## Files to Look At
@@ -22,11 +22,18 @@ A custom dashboard storage should implement one of the following interfaces: [I
 
 The following API used in the example:
 
-- [IEditableDashboardStorage](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IEditableDashboardStorage) provides functionality to open and edit dashboards available in the storage. 
-- [LoadDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.LoadDashboard(System.String)) - returns a dashboard by its ID in the XDocument format, which describes an object model of the dashboard.
-- [GetAvailableDashboardsInfo](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.GetAvailableDashboardsInfo) - returns a list of IDs and Captions of dashboards available in the data storage.
-- [SaveDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.SaveDashboard(System.String-System.Xml.Linq.XDocument)) - updates the dashboard with new settings by its id.
-- [AddDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IEditableDashboardStorage.AddDashboard(System.Xml.Linq.XDocument-System.String))  - takes a dashboard definition with its caption, saves it to the data storage, and returns the ID of a new saved dashboard.
+- [LoadDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.LoadDashboard(System.String)) 
+
+    Returns a dashboard by its ID in the XDocument format, which describes an object model of the dashboard.
+- [GetAvailableDashboardsInfo](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.GetAvailableDashboardsInfo) 
+
+    Returns a list of IDs and Captions of dashboards available in the data storage.
+- [SaveDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage.SaveDashboard(System.String-System.Xml.Linq.XDocument)) 
+
+    Updates the dashboard with new settings by its id.
+- [AddDashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IEditableDashboardStorage.AddDashboard(System.Xml.Linq.XDocument-System.String)) 
+
+   Takes a dashboard definition with its caption, saves it to the data storage, and returns the ID of a new saved dashboard.
   
 Additionally, this example contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)), which can be used to recreate a database used in this example on your side. Do no forget to update the connection string in the **Web.config** file to make it valid in your environment.
 
