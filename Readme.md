@@ -8,13 +8,6 @@
 
 This example shows how to create a custom dashboard storage to load and save dashboards in a database.
 
-<!-- default file list -->
-## Files to Look At
-
-* [DataBaseEditaleDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.cs) (VB: [DataBaseEditaleDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.vb))
-* [Global.asax.cs](./CS/MVCDashboardDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
-<!-- default file list end -->
-
 ## Example Overview
 The example uses the [System.Data.SqlClient](https://msdn.microsoft.com/en-us/library/system.data.sqlclient(v=vs.110).aspx) members to connect and manage an MS SQL server database.
 
@@ -36,6 +29,11 @@ The following API used in the example:
     Saves a dashboard definition and its caption to the data storage and returns the ID of the new saved dashboard.
   
 Additionally, this example contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)) that can be used to recreate a database used in this example. Update the connection string in the **Web.config** file to make it valid in your environment.
+
+## Files to Look At
+
+* [DataBaseEditaleDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.cs) (VB: [DataBaseEditaleDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.vb))
+* [Global.asax.cs](./CS/MVCDashboardDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
 
 ## Documentation
   
