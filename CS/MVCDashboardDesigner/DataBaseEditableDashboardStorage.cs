@@ -2,15 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.IO;
 using System.Xml.Linq;
 
 namespace MVCDashboardDesigner {
-    public class DataBaseEditaleDashboardStorage : IEditableDashboardStorage {
+    public class DataBaseEditableDashboardStorage : IEditableDashboardStorage {
         private string connectionString;
 
-        public DataBaseEditaleDashboardStorage(string connectionString) {
+        public DataBaseEditableDashboardStorage(string connectionString) {
             this.connectionString = connectionString;
         }
 

@@ -13,7 +13,7 @@ namespace MVCDashboardDesigner.App_Start {
         public static void RegisterService(RouteCollection routes) {
             routes.MapDashboardRoute("api/dashboard", "DefaultDashboard");
 
-            var dataBaseDashboardStorage = new DataBaseEditaleDashboardStorage(
+            var dataBaseDashboardStorage = new DataBaseEditableDashboardStorage(
                 ConfigurationManager.ConnectionStrings["DashboardStorageConnection"].ConnectionString);
 
             DashboardConfigurator.Default.SetDashboardStorage(dataBaseDashboardStorage);

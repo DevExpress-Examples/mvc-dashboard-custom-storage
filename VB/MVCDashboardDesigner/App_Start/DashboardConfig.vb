@@ -9,7 +9,7 @@ Public Class DashboardConfig
     Public Shared Sub RegisterService(ByVal routes As RouteCollection)
         routes.MapDashboardRoute("api/dashboard", "DefaultDashboard")
 
-        Dim dataBaseDashboardStorage = New DataBaseEditaleDashboardStorage(ConfigurationManager.ConnectionStrings("DashboardStorageConnection").ConnectionString)
+        Dim dataBaseDashboardStorage = New DataBaseEditableDashboardStorage(ConfigurationManager.ConnectionStrings("DashboardStorageConnection").ConnectionString)
 
         DashboardConfigurator.Default.SetDashboardStorage(dataBaseDashboardStorage)
 
