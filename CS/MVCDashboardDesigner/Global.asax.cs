@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using DevExpress.DashboardCommon;
 using DevExpress.DashboardWeb;
+using DevExpress.Utils;
 using MVCDashboardDesigner.App_Start;
 
 namespace MVCDashboardDesigner {
@@ -13,6 +14,7 @@ namespace MVCDashboardDesigner {
 
     public class MvcApplication : System.Web.HttpApplication {
         protected void Application_Start() {
+            DeserializationSettings.RegisterTrustedClass(typeof(SalesPersonData));
             DashboardConfig.RegisterService(RouteTable.Routes);
             AreaRegistration.RegisterAllAreas();
             WebApiConfig.Register(GlobalConfiguration.Configuration);
