@@ -1,12 +1,9 @@
+using DevExpress.Utils;
+using MVCDashboardDesigner.App_Start;
 using System;
-using System.Configuration;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
-using DevExpress.DashboardCommon;
-using DevExpress.DashboardWeb;
-using DevExpress.Utils;
-using MVCDashboardDesigner.App_Start;
 
 namespace MVCDashboardDesigner {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -20,7 +17,6 @@ namespace MVCDashboardDesigner {
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-
             ModelBinders.Binders.DefaultBinder = new DevExpress.Web.Mvc.DevExpressEditorsBinder();
 
             DevExpress.Web.ASPxWebControl.CallbackError += Application_Error;

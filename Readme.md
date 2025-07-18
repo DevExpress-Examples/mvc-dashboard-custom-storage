@@ -9,7 +9,7 @@
 
 This example shows how to create a custom dashboard storage to load and save dashboards in a database. To create custom dashboard storage, implement [IDashboardStorage](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IDashboardStorage?p=netframework) or [IEditableDashboardStorage](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.IEditableDashboardStorage).
 
-This example also contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)). You can use it to recreate a database on your side. Update the connection string in the **Web.config** file to make it valid in your environment. The example uses the [System.Data.SqlClient](https://msdn.microsoft.com/en-us/library/system.data.sqlclient(v=vs.110).aspx) members to connect and manage an MS SQL server database.
+This example also contains an SQL file ([SavedDashboards.sql](./CS/MVCDashboardDesigner/SavedDashboards.sql)). You can use it to recreate a database on your side. Update the connection string in the **Web.config** file to make it valid in your environment. The example uses the [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient?view=sqlclient-dotnet-6.0) members to connect and manage an MS SQL server database.
 
 The following API used in the example:
 
@@ -29,7 +29,7 @@ The following API used in the example:
 
 ## Files to Review
 
-* [DataBaseEditaleDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.cs) (VB: [DataBaseEditaleDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditaleDashboardStorage.vb))
+* [DataBaseEditableDashboardStorage.cs](./CS/MVCDashboardDesigner/DataBaseEditableDashboardStorage.cs) (VB: [DataBaseEditableDashboardStorage.vb](./VB/MVCDashboardDesigner/DataBaseEditableDashboardStorage.vb))
 * [Global.asax.cs](./CS/MVCDashboardDesigner/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCDashboardDesigner/Global.asax.vb))
 
 ## Documentation

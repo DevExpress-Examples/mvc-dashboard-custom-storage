@@ -24,7 +24,7 @@ Namespace MVCDashboardDesigner
 
 			AddHandler DevExpress.Web.ASPxWebControl.CallbackError, AddressOf Application_Error
 
-			Dim dataBaseDashboardStorage = New DataBaseEditaleDashboardStorage(ConfigurationManager.ConnectionStrings("DashboardStorageConnection").ConnectionString)
+			Dim dataBaseDashboardStorage = New DataBaseEditableDashboardStorage(ConfigurationManager.ConnectionStrings("DashboardStorageConnection").ConnectionString)
 
 			DashboardConfigurator.Default.SetDashboardStorage(dataBaseDashboardStorage)
 

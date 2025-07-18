@@ -7,7 +7,7 @@ Imports System.IO
 Imports System.Xml.Linq
 
 Namespace MVCDashboardDesigner
-	Public Class DataBaseEditaleDashboardStorage
+	Public Class DataBaseEditableDashboardStorage
 		Implements IEditableDashboardStorage
 
 		Private connectionString As String

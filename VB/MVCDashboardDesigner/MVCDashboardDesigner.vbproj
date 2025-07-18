@@ -293,7 +293,7 @@
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\DefaultDashboardController.vb" />
     <Compile Include="Controllers\HomeController.vb" />
-    <Compile Include="DataBaseEditaleDashboardStorage.vb" />
+    <Compile Include="DataBaseEditableDashboardStorage.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
