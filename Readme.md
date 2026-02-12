@@ -44,7 +44,7 @@ The following API used in the example:
 - [Dashboard for Web Forms - How to load and save dashboards from/to a database](https://github.com/DevExpress-Examples/aspxdashboard-how-to-load-and-save-dashboards-from-to-a-database-t386418)
 - [Dashboard for MVC - How to implement multi-tenant Dashboard architecture](https://github.com/DevExpress-Examples/DashboardUserBasedMVC)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=mvc-dashboard-custom-storage&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=mvc-dashboard-custom-storage&~~~was_helpful=no)
 
